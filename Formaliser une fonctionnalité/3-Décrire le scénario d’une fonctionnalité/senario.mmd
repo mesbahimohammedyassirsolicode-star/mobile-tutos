@@ -1,0 +1,7 @@
+sequenceDiagram
+    actor  auteur
+    participant system_blog
+    auteur->>system_blog: demand d ajouter un article
+    system_blog-->>auteur: afficher un form
+    auteur->>system_blog: remplir les infos (titre-contenu-category-status-image..)
+    system_blog-->>auteur: enregistrer l article et redirect dans la list d articles

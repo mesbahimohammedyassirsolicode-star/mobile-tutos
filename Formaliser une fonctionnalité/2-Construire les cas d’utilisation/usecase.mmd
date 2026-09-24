@@ -1,0 +1,31 @@
+usecase-beta
+direction LR
+actor Admin("Admin")
+actor Auteur("Auteur")
+actor visiteur("visiteur")
+consulterC("consulter les catégories")
+ajouterC("ajouter une catégorie")
+modifierC("modifier une catégorie")
+supprimerC("supprimer une catégorie")
+cree("créer un auteur")
+valider("valider un article")
+publier("publier un article")
+ajouterA("ajouter une article")
+modifierA("modifier un article non publié")
+supprimerA("supprimer un article non publié")
+change("changer son profil")
+mdps("réinitialiser son mot de passe")
+consulter("consulter les articles")
+Admin--consulterC
+Admin--ajouterC
+Admin--modifierC
+Admin--supprimerC
+Admin--cree
+Admin--valider
+Admin--publier
+Auteur--ajouterA
+Auteur--modifierA
+Auteur--supprimerA
+Auteur--change
+Auteur--mdps
+visiteur--consulter
