@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construire une interface interactive</title>
+</head>
+<body>
+    <button type="submit" id="btn-show-form">ajouter un category</button>
+
+
+    <form action="" id="category-form" hidden>
+        <input type="text" id="cat-nom" placeholder="enter category name">
+        <input type="text" id="cat-couleur" placeholder="enter category couleur">
+      
+        <button type="reset" id="btn-cancel-form">annuler</button>
+        <button type="submit" id="submit-form">enregistrer </button>
+    </form>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>couleur</th>
+            </tr>
+        </thead>
+        <tbody id="table-categories-body">
+         
+           
+            
+        </tbody>
+
+    </table>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded",()=>{
+            const form =document.querySelector("#category-form");
+            const afficher=document.querySelector("#btn-show-form");
+            const annuler= document.querySelector("#btn-cancel-form"); 
+            const table_category= document.querySelector("#table-categories-body"); 
+            
+            let cat_name=document.querySelector("#cat-nom");
+            let cat_couleur=document.querySelector("#cat-couleur");
+            
+
+            form.addEventListener("submit",(event)=>{
+                event.preventDefault();
+                table_category.insertAdjacentHTML("beforeend",`<tr> <td>${cat_name.value}</td>
+            <td>${cat_couleur.value}</td></tr>`);
+            form.reset();
+
+            })
+
+            afficher.addEventListener("click",()=>{
+              
+                    form.hidden=false;
+                    afficher.hidden=true
+            })
+            annuler.addEventListener("click",()=>{
+              
+                    form.hidden=true;
+                    form.reset();
+                    afficher.hidden=false;
+                    
+            })
+        })
+      
+    </script>
+</body>
+</html>
