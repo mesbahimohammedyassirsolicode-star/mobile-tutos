@@ -5,3 +5,26 @@ classDiagram
         -string  couleur
         -string icons
     }
+     class USER{
+        -int id_user
+        -string role
+        -string  email
+        -string mote_pass
+    }
+     class AUTEUR{
+        - id_auteur : int (PK)
+        - id_user : int (FK)
+        - nom : string
+        - prenom : string
+        - biographie : string
+        - avatar : string
+    }
+     class ARTICLE{
+        - id_article : int (PK)
+        - id_categorie : int (FK)
+        - id_auteur : int (FK)
+        - titre : string
+        - contenu : text
+        - statut : string
+        - date_creation : date
+}
