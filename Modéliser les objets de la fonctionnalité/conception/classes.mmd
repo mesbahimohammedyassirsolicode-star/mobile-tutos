@@ -28,3 +28,6 @@ classDiagram
         - statut : string
         - date_creation : date
 }
+ User "1" -- "0..1" Auteur : a pour profil
+    Auteur "1" -- "0..*" Article : rédige
+    Categorie "1" -- "0..*" Article : contient
