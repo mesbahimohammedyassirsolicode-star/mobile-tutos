@@ -1,33 +1,31 @@
 classDiagram
-    class Produit{
+    class Categorie {
         -int id
         -string nom
-        -string  couleur
-        -string icons
+        -string couleur
+        -string icone
     }
-     class USER{
-        -int id_user
+    class User {
+        -int id
+        -string email
+        -string password
         -string role
-        -string  email
-        -string mote_pass
     }
-     class AUTEUR{
-        - id_auteur : int (PK)
-        - id_user : int (FK)
-        - nom : string
-        - prenom : string
-        - biographie : string
-        - avatar : string
+    class Auteur {
+        -int id
+        -string nom
+        -string prenom
+        -string biographie
+        -string avatar
     }
-     class ARTICLE{
-        - id_article : int (PK)
-        - id_categorie : int (FK)
-        - id_auteur : int (FK)
-        - titre : string
-        - contenu : text
-        - statut : string
-        - date_creation : date
-}
- User "1" -- "0..1" Auteur : a pour profil
+    class Article {
+        -int id
+        -string titre
+        -string contenu
+        -string statut
+        -DateTime date_creation
+    }
+
+    User "1" -- "0..1" Auteur : a pour profil
     Auteur "1" -- "0..*" Article : rédige
     Categorie "1" -- "0..*" Article : contient
