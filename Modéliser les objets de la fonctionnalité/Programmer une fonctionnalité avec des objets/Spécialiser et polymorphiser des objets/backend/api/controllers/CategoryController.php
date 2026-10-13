@@ -12,7 +12,6 @@ class CategorieController {
     }
 }
 
-// Test d'exécution
 $controller = new CategorieController();
 $controller->listerCategories();
 ?>
