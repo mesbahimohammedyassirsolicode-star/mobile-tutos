@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "nom": "Développement web",
+        "couleur": "#3B82F6",
+        "icone": "💻"
+    },
+    {
+        "id": 2,
+        "nom": "Design UI/UX",
+        "couleur": "#8B5CF6",
+        "icone": "🎨"
+    },
+    {
+        "id": 3,
+        "nom": "Bases de données",
+        "couleur": "#10B981",
+        "icone": "🗄️"
+    },
+    {
+        "id": 4,
+        "nom": "Réseaux",
+        "couleur": "#F59E0B",
+        "icone": "🌐"
+    },
+    {
+        "id": 5,
+        "nom": "Sécurité informatique",
+        "couleur": "#EF4444",
+        "icone": "🔒"
+    }
+]
