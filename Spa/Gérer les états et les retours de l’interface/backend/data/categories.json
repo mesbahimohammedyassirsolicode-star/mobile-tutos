@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "nom": "D\u00e9veloppement web",
+        "couleur": "#3B82F6",
+        "icone": "\ud83d\udcbb"
+    },
+    {
+        "id": 2,
+        "nom": "Design UI\/UX",
+        "couleur": "#8B5CF6",
+        "icone": "\ud83c\udfa8"
+    },
+    {
+        "id": 3,
+        "nom": "Bases de donn\u00e9es",
+        "couleur": "#10B981",
+        "icone": "\ud83d\uddc4\ufe0f"
+    },
+    {
+        "id": 4,
+        "nom": "R\u00e9seaux",
+        "couleur": "#F59E0B",
+        "icone": "\ud83c\udf10"
+    },
+    {
+        "id": 5,
+        "nom": "S\u00e9curit\u00e9 informatique",
+        "couleur": "#EF4444",
+        "icone": "\ud83d\udd12"
+    },
+    {
+        "nom": "test",
+        "couleur": "#f01800",
+        "icone": "\ud83d\udcbb",
+        "id": 6
+    },
+    {
+        "nom": "test 2",
+        "couleur": "#acbfdc",
+        "icone": "\ud83d\udcbb",
+        "id": 7
+    }
+]
